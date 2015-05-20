@@ -1,11 +1,16 @@
 ---
 title: "Codebook"
 output: html_document
+author: "Jesus Martin (github.com/hezumartin)"
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Variables
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+train: table at "UCI HAR Dataset/train/X_train.txt"
+test: table at "UCI HAR Dataset/test/X_test.txt"
+tt: train and test variables combined
+
+
 
 ```{r}
 summary(cars)
