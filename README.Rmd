@@ -1,20 +1,19 @@
----
-title: "Readme"
-output: html_document
----
+#Readme document for the Course Project of Getting and Cleaning Data
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Summary
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The file run_analysis.R allows you to download the data from the [Human Activity Recognition Using Smartphones Data Set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and unzip it in your working directory
 
-```{r}
-summary(cars)
-```
 
-You can also embed plots, for example:
+## Description of run_analysis.R
 
-```{r, echo=FALSE}
-plot(cars)
-```
+First, download the data, unzip it and saves it in data frames (rows 5-17) then it combines the train and test data (18-20)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+As a second step, we extract the headers from features.txt, taking only those which contain mean or std (23-25) and takes only that columns from the variable xdata
+
+The third step (re)names the activities (31-33) and the fourth step labels the data set (37-39)
+
+The last step applies the function colMeans (from package plyr) to all combinations of subject and activity, storing it in a txt file (43,45)
+
+
+

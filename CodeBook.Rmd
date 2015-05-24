@@ -1,25 +1,20 @@
----
-title: "Codebook"
-output: html_document
-author: "Jesus Martin (github.com/hezumartin)"
----
 
-# Variables
-
-train: table at "UCI HAR Dataset/train/X_train.txt"
-test: table at "UCI HAR Dataset/test/X_test.txt"
-tt: train and test variables combined
+# Codebook for the Course Project of Getting and Cleaning Data Course
 
 
+## Variables used in run_analysis.R
 
-```{r}
-summary(cars)
-```
+xtrain, xtest: tables at the dataset on the collected data from the sensors, for the training and the test set. 
+xdata: the combination of both
+ytrain, ytest: training and test labels. 
+ydata: the combination of both
+stest, strain: identification of the subject performing the activity
+features: List of all features
+xdatameanstd: subset of xdata that only contains mean and std measurements
+activities: table which explains what activity was the subject doing (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+data: combined dataset for xdata, ydata and sdata so everything is in one data frame
+meandata: calculation of the mean and standard deviation for every combination of subject and activity from data. This data frame is used for the output (meandata.txt)
 
-You can also embed plots, for example:
 
-```{r, echo=FALSE}
-plot(cars)
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
