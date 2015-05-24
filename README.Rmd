@@ -1,11 +1,25 @@
+<<<<<<< HEAD
 #Readme document for the Course Project of Getting and Cleaning Data
 
 ## Summary
+=======
+---
+title: "Readme document for the Course Project of Getting and Cleaning Data"
+output: html_document
+author: "Jesus Martin (github.com/hezumartin)"
+---
+
+# Summary
+>>>>>>> c2e40880b4d9171a65fcec7fa333e523c2bc5d75
 
 The file run_analysis.R allows you to download the data from the [Human Activity Recognition Using Smartphones Data Set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and unzip it in your working directory
 
 
+<<<<<<< HEAD
 ## Description of run_analysis.R
+=======
+# Description of run_analysis.R
+>>>>>>> c2e40880b4d9171a65fcec7fa333e523c2bc5d75
 
 First, download the data, unzip it and saves it in data frames (rows 5-17) then it combines the train and test data (18-20)
 

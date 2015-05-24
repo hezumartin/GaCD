@@ -1,6 +1,27 @@
+<<<<<<< HEAD
 
 # Codebook for the Course Project of Getting and Cleaning Data Course
 
+=======
+---
+title: "Codebook for the Course Project of Getting and Cleaning Data Course"
+output: html_document
+author: "Jesus Martin (github.com/hezumartin)"
+---
+
+# Variables used in run_analysis.R
+
+xtrain, xtest: tables at the dataset on the collected data from the sensors, for the training and the test set. 
+xdata: the combination of both
+ytrain, ytest: training and test labels. 
+ydata: the combination of both
+stest, strain: identification of the subject performing the activity
+features: List of all features
+xdatameanstd: subset of xdata that only contains mean and std measurements
+activities: table which explains what activity was the subject doing (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+data: combined dataset for xdata, ydata and sdata so everything is in one data frame
+meandata: calculation of the mean and standard deviation for every combination of subject and activity from data. This data frame is used for the output (meandata.txt)
+>>>>>>> c2e40880b4d9171a65fcec7fa333e523c2bc5d75
 
 ## Variables used in run_analysis.R
 
@@ -16,5 +37,8 @@ data: combined dataset for xdata, ydata and sdata so everything is in one data f
 meandata: calculation of the mean and standard deviation for every combination of subject and activity from data. This data frame is used for the output (meandata.txt)
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c2e40880b4d9171a65fcec7fa333e523c2bc5d75
